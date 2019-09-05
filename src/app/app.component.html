@@ -1,0 +1,91 @@
+<div class="jumbotron jumbotron-fluid text-center d-flex justify-content-center align-items-center" style="background: center url('/assets/img/grande-dixence.jpg'); min-height: 30vh;">
+  <h1 class="display-4 text-white font-weight-normal">Maurice Métral</h1>
+</div>
+
+<div class="container">
+  <div class="row navs-tab">
+    <div class="col-md-3 mb-5">
+      <div class="nav flex-column nav-pills" aria-orientation="vertical">
+        <a class="nav-link" [ngClass]="{'active': step == 1}" href="#jeunesse" role="tab" (click)="$event.preventDefault(); step = 1">Jeunesse</a>
+        <a class="nav-link" [ngClass]="{'active': step == 2}" href="#profile" role="tab" (click)="$event.preventDefault(); step = 2">De 1952 à 1970</a>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="container tab-content">
+        <div class="row no-gutters animated fadeIn" *ngIf="step == 1">
+          <div class="col-12">
+            <p><i><strong>Maurice Métral</strong></i> est un écrivain suisse né le 5 avril 1929 à Grône.</p>
+          </div>
+
+          <div class="block">
+            <div class="col-12"><h2 class="title">Jeunesse</h2></div>
+
+            <div class="col-md-3 text-center">
+              <img src="https://picsum.photos/200/300" class="img-fluid">
+              <small class="font-italic mb-md-0 mb-4 d-block">Description de l'image</small>
+            </div>
+
+            <div class="col-md-9" style="margin-top: -18px;">
+              <p>Fils d'un père menuisier-charpentier, Maurice Métral est l'un des dix enfants de la famille. Durant sa jeunesse, il effectue un apprentissage de charpentier.</p>
+              <p>Dès l'âge de <b>10 ans</b>, il effectue chaque semaine le voyage de Grône à Sion, soit 10 km à pied, dans le but de se procurer de nouveau livre. Il se passionne déjà pour Baudelaire et apprend par coeur Les Fleurs du Mal ainsi que d'autres univers tels que Musset, Lamartine ou encore Hugo.</p>
+            </div>
+          </div>
+
+          <div class="block mb-4">
+            <div class="col-12">
+            <h2 class="sub-title">Passion</h2>
+          </div>
+            <div class="col-md-7 order-2 order-md-1">
+                <p>Sa passion pour la litérature française ne cesse de croitre. En effet, à <b>14 ans</b> seulement, il entre dans l'univers de Balzac avec la Peau de Chagrin. Puis s'enthousiasme peu à peu pour Stendhal, Zola et Maupassant.</p>
+                <p>A ses <b>16 ans</b>, il lui vient en tête l'idée de fonder une société régionale de Développement culturel en vue de former des troupes théâtrale.</p>
+            </div>
+
+            <div class="col-md-5 text-center order-1 order-md-2">
+              <img src="https://picsum.photos/280/170" class="img-fluid">
+              <small class="font-italic mb-md-0 mb-4 d-block">Description de l'image</small>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <p><b>Un an après</b>, il écrit et publie déjà sa première pièce : <i>Le Maitre de la Terreur</i>, fresque sur la Révolution française. Il s'occupe lui-même de la mise en scène de l'oeuvre qui est jouée à Grône.</p>
+          </div>
+        </div>
+
+        <div class="row no-gutters animated fadeIn" *ngIf="step == 2">
+            <div class="block">
+              <div class="col-12"><h2 class="title">De 1952 à 1970</h2></div>
+  
+              <div class="col-md-5 text-center">
+                <img src="https://picsum.photos/300/200" class="img-fluid">
+                <small class="font-italic mb-md-0 mb-4 d-block">Description de l'image</small>
+              </div>
+  
+              <div class="col-md-7" style="margin-top: -18px;">
+                <p><b>Maurice Métral</b> épouse en 1952 une Italienne du Nord, Angela Romelli.</p>
+                <p>Une année plus tard, <b>Gaston Picard</b>, fondateur du prix Renaudot, préface le Chemin des Larmes, publié à Paris.</p>
+              </div>
+            </div>
+  
+            <div class="block">
+                <div class="col-12">
+                    <h2 class="sub-title">Professions</h2>
+                  </div>
+              <div class="col-12">
+                  <p>Contraint de gagner sa vie à côté de l'écriture, il devient en <b>1960</b> professeur de littérature française dans un Institut de grande notoriété. La même année, il est correcteur au journal la Feuille d'Avis du Valais, puis rédacteur en chef 3 ans plus tard. En <b>1969</b>, il est aussi rédacteur au Nouvelliste.</p>
+                  <p>Pendant <b>2 ans</b>, il exerce à plein temps la double profession : <i>professeur</i> le jour et <i>rédacteur</i> la nuit.</p>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="col-12">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <img src="https://picsum.photos/800/500" class="img-fluid"><br>
+                </div>
+                  <p>De <b>1964 à 1968</b>, l'écrivain valaisan crée le premier supplément littérature de journaux francophones. Il contribue aussi à des ouvrages collectifs, rédige des introductions et des préfaces pour des Collections d'auteurs classiques. Dès <b>1970</b>, Maurice Métral se consacre entièrement à l'écriture.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>

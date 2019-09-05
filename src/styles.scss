@@ -1,0 +1,64 @@
+// Variables
+//$body-bg: #dde9ff;
+$body-bg: #ffffff;
+$font-size-base: 1rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 800px,
+  xl: 900px
+);
+$paragraph-margin-bottom: 1.5rem;
+
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+img {
+    border-radius: 0.3125rem;
+}
+
+.nav-link {
+    color: #377dff;
+}
+
+.nav-link.active {
+    color: #3791ff !important;
+    background-color: #ffffff !important;
+    font-weight: bold;
+}
+
+p { color: #404852; }
+
+// Custom class
+.block {
+    margin-bottom: 4rem;
+    line-height: 1.8;
+    @extend .row, .align-items-center;
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    color: #404852;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #404852;
+}
+
+.row.navs-tab {
+    @media (min-width: 720px) {
+        margin-left: -16.66666%;
+    }
+}
